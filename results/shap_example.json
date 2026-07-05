@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "target_global_idx": 542001,
+    "predicted_prob": 0.7539404630661011,
+    "base_value": 0.14949008613824843,
+    "additive_check": 0.753940463066101,
+    "pos_sum": 0.6615033881025304,
+    "neg_sum": -0.0570530111746778,
+    "net_direction": "raise",
+    "sign_consistent": true
+  },
+  "raw": {
+    "TransactionID": 3529001,
+    "isFraud": 1,
+    "TransactionAmt": 54.225,
+    "ProductCD": "C",
+    "card4": "visa",
+    "card6": "debit",
+    "addr1": 299.0,
+    "dist1": 8.0,
+    "P_emaildomain": "gmail.com",
+    "DeviceType": "mobile",
+    "DeviceInfo": "SM-G920P Build/NRD90M",
+    "hour": 13,
+    "day": 4
+  },
+  "rows": [
+    {
+      "rank": 1,
+      "feature": "C1",
+      "model_value": 0.44566991925239563,
+      "shap_contribution": 0.22175497669748898
+    },
+    {
+      "rank": 2,
+      "feature": "C11",
+      "model_value": 0.38099029660224915,
+      "shap_contribution": 0.12097222919172705
+    },
+    {
+      "rank": 3,
+      "feature": "C8",
+      "model_value": 0.5766729116439819,
+      "shap_contribution": 0.08354610721432293
+    },
+    {
+      "rank": 4,
+      "feature": "C12",
+      "model_value": 0.45854952931404114,
+      "shap_contribution": 0.06263077271078944
+    },
+    {
+      "rank": 5,
+      "feature": "DeviceType",
+      "model_value": 0.10023272037506104,
+      "shap_contribution": 0.03257480671373099
+    },
+    {
+      "rank": 6,
+      "feature": "D1",
+      "model_value": -0.5843946933746338,
+      "shap_contribution": 0.02247730904239248
+    },
+    {
+      "rank": 7,
+      "feature": "C14",
+      "model_value": -0.06851945072412491,
+      "shap_contribution": -0.019118756716188602
+    },
+    {
+      "rank": 8,
+      "feature": "C4",
+      "model_value": 0.20308823883533478,
+      "shap_contribution": 0.018514962937848153
+    },
+    {
+      "rank": 9,
+      "feature": "C7",
+      "model_value": 0.23170973360538483,
+      "shap_contribution": -0.017424095043789844
+    },
+    {
+      "rank": 10,
+      "feature": "C5",
+      "model_value": -0.21323660016059875,
+      "shap_contribution": 0.016977330652558017
+    },
+    {
+      "rank": 11,
+      "feature": "P_emaildomain",
+      "model_value": 0.38515353202819824,
+      "shap_contribution": 0.01682746686529068
+    },
+    {
+      "rank": 12,
+      "feature": "C2",
+      "model_value": 0.3034910559654236,
+      "shap_contribution": 0.016459875072676173
+    },
+    {
+      "rank": 13,
+      "feature": "C13",
+      "model_value": -0.1998724788427353,
+      "shap_contribution": 0.014291159461557436
+    },
+    {
+      "rank": 14,
+      "feature": "C6",
+      "model_value": 0.13727733492851257,
+      "shap_contribution": 0.006494538911349351
+    },
+    {
+      "rank": 15,
+      "feature": "C9",
+      "model_value": -0.2612651288509369,
+      "shap_contribution": -0.006293417445189856
+    },
+    {
+      "rank": 16,
+      "feature": "D15",
+      "model_value": -0.758956789970398,
+      "shap_contribution": 0.006009831551344194
+    },
+    {
+      "rank": 17,
+      "feature": "C10",
+      "model_value": 0.1684374362230301,
+      "shap_contribution": 0.005485898472259306
+    },
+    {
+      "rank": 18,
+      "feature": "amt_vs_client_mean",
+      "model_value": 0.069111168384552,
+      "shap_contribution": 0.004144584258613242
+    },
+    {
+      "rank": 19,
+      "feature": "id_31",
+      "model_value": 0.0,
+      "shap_contribution": 0.0034168895567289193
+    },
+    {
+      "rank": 20,
+      "feature": "client_txn_count",
+      "model_value": 0.038215477019548416,
+      "shap_contribution": -0.0034119801869393466
+    },
+    {
+      "rank": 21,
+      "feature": "ProductCD",
+      "model_value": 0.12096918374300003,
+      "shap_contribution": -0.003228204431239661
+    },
+    {
+      "rank": 22,
+      "feature": "card4",
+      "model_value": 0.653343915939331,
+      "shap_contribution": 0.0031949629364841628
+    },
+    {
+      "rank": 23,
+      "feature": "id_30",
+      "model_value": 0.8505242466926575,
+      "shap_contribution": -0.0026885867146461805
+    },
+    {
+      "rank": 24,
+      "feature": "day",
+      "model_value": 0.5314623117446899,
+      "shap_contribution": 0.002479490888257124
+    },
+    {
+      "rank": 25,
+      "feature": "dist1",
+      "model_value": -0.1838812679052353,
+      "shap_contribution": 0.001918182060517205
+    },
+    {
+      "rank": 26,
+      "feature": "hour",
+      "model_value": -0.10375688225030899,
+      "shap_contribution": -0.0017300380576328635
+    },
+    {
+      "rank": 27,
+      "feature": "card6",
+      "model_value": 0.7333409190177917,
+      "shap_contribution": -0.001402793275919343
+    },
+    {
+      "rank": 28,
+      "feature": "TransactionAmt",
+      "model_value": -0.33772012591362,
+      "shap_contribution": 0.0012942036533447232
+    },
+    {
+      "rank": 29,
+      "feature": "client_std_amt",
+      "model_value": -0.6111248731613159,
+      "shap_contribution": -0.0009105587250002521
+    },
+    {
+      "rank": 30,
+      "feature": "log_amt",
+      "model_value": -0.39904704689979553,
+      "shap_contribution": -0.0008445805781318477
+    },
+    {
+      "rank": 31,
+      "feature": "client_mean_amt",
+      "model_value": -0.6491464376449585,
+      "shap_contribution": 3.78092532497871e-05
+    },
+    {
+      "rank": 32,
+      "feature": "C3",
+      "model_value": -0.03740747645497322,
+      "shap_contribution": 0.0
+    }
+  ]
+}

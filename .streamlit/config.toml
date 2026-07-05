@@ -1,0 +1,13 @@
+# Streamlit theme for the FraudShield dashboard.
+# Light, warm-grey base so the white cards + navy/blue accents render
+# consistently regardless of the viewer's global Streamlit theme.
+[theme]
+base = "light"
+backgroundColor = "#F5F5F7"
+secondaryBackgroundColor = "#FFFFFF"
+primaryColor = "#2563EB"
+textColor = "#374151"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false

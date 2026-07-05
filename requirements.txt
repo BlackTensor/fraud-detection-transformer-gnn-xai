@@ -1,0 +1,53 @@
+# requirements.txt — fraud-detection project
+# ALL packages below are free & open-source. ₹0 / $0 — no paid tools or APIs.
+#
+# Quick install (CPU; most packages):
+#     pip install -r requirements.txt
+#
+# Versions are pinned to what this project was developed/verified against.
+# If a pin conflicts with your Python/CUDA, relax it to a nearby version.
+
+# --- Core data handling ---
+pandas==2.3.3
+numpy==2.4.1
+
+# --- Preprocessing / classical ML / metrics ---
+scikit-learn==1.8.0
+
+# --- Deep learning (sequence transformer + fusion classifier) ---
+# NOTE: this pin is the CPU build (torch==2.11.0). For a CUDA build, install
+# torch first from the official selector at https://pytorch.org/get-started/locally/
+# (e.g. `pip install torch --index-url https://download.pytorch.org/whl/cu121`),
+# then run the rest of this file.
+torch==2.11.0
+
+# --- Graph neural networks ---
+# torch_geometric's install depends on your torch + CUDA version. The base
+# package is pip-installable directly; the optional compiled extensions
+# (torch-scatter / torch-sparse) come from PyG's wheel index. Install AFTER torch:
+#     pip install torch_geometric
+#     # optional accelerated kernels (match {TORCH}+{CUDA/cpu} to your torch):
+#     pip install pyg_lib torch_scatter torch_sparse \
+#         -f https://data.pyg.org/whl/torch-2.11.0+cpu.html
+# We leave it unpinned here so it resolves against your installed torch.
+torch_geometric
+networkx==3.6.1
+
+# --- Explainability ---
+shap==0.51.0
+# Ollama is the PYTHON CLIENT only. The Ollama runtime itself is installed
+# SEPARATELY (free) from https://ollama.com, then pull a small free model:
+#     ollama pull llama3.2:3b   # ~2GB  (default used by this project — see
+#                               # src/explain_ollama.py for why it replaced phi3)
+#     # or: ollama pull phi3    # ~2GB, or: ollama pull mistral   # ~4GB
+ollama==0.6.2
+
+# --- Deployment ---
+streamlit==1.55.0
+
+# --- Plotting ---
+matplotlib==3.10.9
+seaborn==0.13.2
+
+# --- Utilities ---
+tqdm==4.67.3

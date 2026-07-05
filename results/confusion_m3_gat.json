@@ -1,0 +1,15 @@
+{
+  "model": "m3_gat",
+  "label": "Transformer + GAT",
+  "threshold": 0.3138639628887176,
+  "threshold_source": "best-F1 threshold (comparison.csv)",
+  "tn": 84598,
+  "fp": 900,
+  "fn": 1928,
+  "tp": 1155,
+  "n": 88581,
+  "n_fraud": 3083,
+  "n_legit": 85498,
+  "precision": 0.5620437956204379,
+  "recall": 0.3746350956860201
+}
